@@ -268,9 +268,40 @@ router.get("/form/getSurveyData/:formId", async (req, res) => {
       });
     }
   });
+
   
   // Add this new route to your existing Express router
   router.use("/form", router);
+responseRouter.post("/submitResponse", async (req, res) => {
+    try {
+        const { formId, name, email, phoneNumber, answers } = req.body;
+
+        // Create a new response document and save it to the responseModel
+        const newResponse = await responseModel.create({
+            formId,
+            name,
+            email,
+            phoneNumber,
+            answers,
+        });
+
+        res.status(200).json({
+            status: true,
+            message: "Survey response submitted successfully",
+            response: newResponse,
+        });
+    } catch (error) {
+        console.error("Error submitting survey response:", error);
+        res.status(500).json({
+            status: false,
+            message: "Something went wrong",
+            error: error.message, // Include the specific error message for debugging purposes.
+        });
+    }
+});
+
+// Add the responseRouter to your Express app under the "/form" path
+app.use("/form", responseRouter);
   
   
 // --->> Express server <<---
