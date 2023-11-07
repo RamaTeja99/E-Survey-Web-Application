@@ -1,10 +1,10 @@
 /* SurveySubmissionPage.css */
-.Submission{
-  background: rgba(0, 0, 0, 0.5);
+.Submission {
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   padding: 40px;
-  width: 500px; /* Increase the width */
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,24 +12,79 @@
   color: #fff;
   justify-content: center;
   align-items: center;
-  height: 70vh; /* Increase the height */
-  margin: 0 auto; /* Center the form horizontally */
-  position: absolute; /* Center the form vertically */
+  max-height: 70vh; /* Set a maximum height */
+  overflow-y: auto; /* Add vertical scrolling when content exceeds the height */
+  margin: 0 auto;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .back-button {
   display: block;
   margin-bottom: 20px;
-  color: #007bff; /* Blue color for the link */
+  color: #007bff;
   text-decoration: none;
   font-weight: bold;
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 20px; /* Adjusted the left position for better alignment */
+  top: 20px; /* Adjusted the top position for better alignment */
 }
 
 .back-button:hover {
   text-decoration: underline;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+input[type="Responsetext"],
+input[type="Responseemail"],
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Slightly darker on hover */
 }
