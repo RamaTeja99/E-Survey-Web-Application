@@ -8,7 +8,8 @@ const AddSurvey = () => {
   const history = useHistory(); 
 const [title, setTitle] = useState('');
 const [description, setDescription] = useState('');
-const [questions, setQuestions] = useState([{ text: '', type: 'text', options: '' }]);
+const [questions, setQuestions] = useState([{ text: '', type: 'text', options: [] }]);
+
 
 
 const handleSubmit = async (event) => {
