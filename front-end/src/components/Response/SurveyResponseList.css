@@ -1,3 +1,57 @@
-.ResponseList{
-  color:aliceblue;
+/* SurveyResponseList.css */
+.ResponseList {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.ResponseList h2 {
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #333;
+}
+
+.ResponseList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ResponseList li {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ResponseList h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.ResponseList p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.ResponseList h4 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.ResponseList ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ResponseList p {
+  margin: 5px 0;
+  font-size: 14px;
 }
