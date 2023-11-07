@@ -1,0 +1,79 @@
+/* Update the .login-container and .login-form styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(#141e30, #243b55);
+  margin: 0;
+}
+
+.login-form {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.login-form .MuiTypography-h2 {
+  margin: 0 0 30px;
+  color: #fff;
+}
+
+.login-form .MuiInputLabel-root {
+  display: block;
+  text-align: left;
+  color: #fff;
+}
+
+.login-form .MuiInputBase-root {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-form .MuiButton-root {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form .MuiButton-root:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: #ff0000;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-link a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}

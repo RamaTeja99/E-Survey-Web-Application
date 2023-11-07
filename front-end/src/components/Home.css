@@ -1,0 +1,83 @@
+/* Home.css */
+html {
+  background-image: url('./Photos/Home.jpeg'); /* Background image for the entire page */
+  height: 100vh;
+  background-position:center;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Background color for the navigation bar with some transparency */
+  padding: 0.1rem; /* Reduced padding to the navigation bar */
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem; /* Add spacing between links */
+}
+
+.title { /* Added title style class */
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.title::before{
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: #b80000;
+}
+
+.title::after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 25px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #b80000;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  text-align: center; /* Center-align content */
+}
+
+.column {
+  flex: 1;
+  margin: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+  border-radius: 8px; /* Add rounded corners to the content columns */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the columns */
+}
+
+.column ul {
+  list-style: none; /* Remove the bullet points */
+  padding: 0;
+}
+
+.column ul li {
+  background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.column h2 {
+  color: #333; /* Title color for content columns */
+}

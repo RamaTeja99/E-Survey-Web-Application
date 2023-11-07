@@ -1,0 +1,50 @@
+/* Payment.css */
+.PaymentPage{
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  width: 500px; /* Increase the width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Increase the height */
+  margin: 0 auto; /* Center the form horizontally */
+  position: absolute; /* Center the form vertically */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.PaymentButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Add some spacing between buttons */
+}
+
+/* Style for individual buttons */
+.PaymentButton {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Add spacing between the icon and text */
+  width: 200px; /* Set a fixed width for all buttons (adjust as needed) */
+}
+/* Style for the back button */
+.back-button {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
