@@ -4,7 +4,7 @@ The E-Survey Web Application is a Mern Stack Project and ESurvey is a user-frien
 # go to terminal to run front-end code
 <br> cd  E-Survey-Web-Application
 <br> cd front-end
-<br> npm install
+<br> npm install --legacy-peer-deps
 <br> npm start
 # open new terminal to run the back-end code
 <br> cd  E-Survey-Web-Application
