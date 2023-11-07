@@ -268,41 +268,32 @@ router.get("/form/getSurveyData/:formId", async (req, res) => {
       });
     }
   });
-
   
   // Add this new route to your existing Express router
   router.use("/form", router);
-responseRouter.post("/submitResponse", async (req, res) => {
+  // Add a new API endpoint to submit survey responses
+router.post("/form/submitResponse", async (req, res) => {
     try {
-        const { formId, name, email, phoneNumber, answers } = req.body;
+        // You can handle the submission of survey responses here.
+        // Assuming that `req.body` contains the response data.
 
-        // Create a new response document and save it to the responseModel
-        const newResponse = await responseModel.create({
-            formId,
-            name,
-            email,
-            phoneNumber,
-            answers,
-        });
+        // Example: Save the response to the responseModel
+        const response = await responseModel.create(req.body);
 
         res.status(200).json({
             status: true,
             message: "Survey response submitted successfully",
-            response: newResponse,
+            response: response,
         });
     } catch (error) {
-        console.error("Error submitting survey response:", error);
+        console.error('Error submitting survey response:', error);
         res.status(500).json({
             status: false,
-            message: "Something went wrong",
-            error: error.message, // Include the specific error message for debugging purposes.
+            message: 'Something went wrong',
         });
     }
 });
 
-// Add the responseRouter to your Express app under the "/form" path
-app.use("/form", responseRouter);
-  
   
 // --->> Express server <<---
 app.listen(process.env.PORT, () => {
